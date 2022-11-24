@@ -1,0 +1,39 @@
+{
+    "users": [
+        {
+            "id": "6377a728abffeb0ed0d5b314",
+            "firstname": "Jerry",
+            "lastname": "Loler",
+            "createDate": "2022-11-18",
+            "sessionTimeOut": 34
+        },
+        {
+            "id": "637671c06460094fb67e61f1",
+            "firstname": "Mable",
+            "lastname": "Carlson",
+            "createDate": "2022-11-17",
+            "sessionTimeOut": 180
+        },
+        {
+            "id": "6376438b6460094fb67e61ec",
+            "firstname": "Maxin",
+            "lastname": "Bax",
+            "createDate": "2022-11-17",
+            "sessionTimeOut": 1
+        },
+        {
+            "id": "6370bc297c0cb1b404dfb7b2",
+            "firstname": "Edgar",
+            "lastname": "Carr",
+            "createDate": "2022-11-13",
+            "sessionTimeOut": 180
+        },
+        {
+            "id": "636fb4dc7292fd364660953b",
+            "firstname": "Alger",
+            "lastname": "Stanley",
+            "createDate": "2022-13-11",
+            "sessionTimeOut": 120
+        }
+    ]
+}

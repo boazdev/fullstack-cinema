@@ -1,0 +1,13 @@
+{
+	"users" : [
+					{
+						"id": "636fb4dc7292fd364660953b",
+						"permissions" : ["View Subscriptions",
+						"Create Subscriptions",
+						"Delete Subscriptions",
+						"View Movies",
+						"Create Movies",
+						"Delete Movies"]
+					}
+				]
+}
