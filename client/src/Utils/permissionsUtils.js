@@ -1,0 +1,2 @@
+export const permList =["View Subscriptions","Update Subscriptions", "Delete Subscriptions", "Create Subscriptions",
+                        "View Movies","Update Movies", "Delete Movies", "Create Movies"]
