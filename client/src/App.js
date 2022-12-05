@@ -40,6 +40,7 @@ function App() {
               <Route exact path="add movie" element={<MovieAddPage/>}/>
             </Route>
           <Route exact path="editmovie/:id" element={<MovieEditPage/>}/>
+          
           <Route exact path="subscriptions" element={<SubscriptionsPage />} >
               <Route exact path="" element={<MemberViewPage/>}/>
               <Route exact path="add member" element={<MemberAddPage/>}/>

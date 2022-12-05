@@ -14,7 +14,6 @@ export const MoviesPage = () => {
     ()=>{
       
       if(document.location.pathname==="/homepage/movies")
-        console.log("parh name:" + document.location.pathname)
         setMenuOption("all movies")
     },[]
   )
@@ -43,7 +42,7 @@ export const MoviesPage = () => {
       }
       
       <br/>
-      <Outlet context={[menuOption,printFunc]}/>
+      <Outlet context={[menuOption,printFunc,setMenuOption]}/>
       </div>
   )
 }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { updateCinemaWS,postCinemaWS } from '../Utils/cinemaWsCRUD'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useOutletContext } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 
 import { dateFormat, genresList } from '../Utils/generalUtils'
@@ -12,7 +12,13 @@ export const MovieForm = (props) => {
             ,image:props.isEdit?props.data.image:"",premiered:props.isEdit?props.data.premiered:dateFormat(new Date())})
             
   
-  
+            //const [menuOption,printFunc,setMenuOption]= useOutletContext()
+  const cancelHandler = () =>
+  {
+    if(!props.isEdit)
+        props.setMenuOption("all movies")
+    navigate("/homepage/movies")
+  }
   const submitHandler = async (e) => {
               e.preventDefault()
               
@@ -25,6 +31,9 @@ export const MovieForm = (props) => {
                   return
                 }
              // console.log("response post:" +resp.toString())
+            // printFunc()
+             if(!props.isEdit)
+                props.setMenuOption("all movies")
               navigate("/homepage/movies")
             }
             const selectHandler = (data) => {
@@ -52,7 +61,7 @@ export const MovieForm = (props) => {
             <input type="date" defaultValue={props.isEdit ?props.data.premiered:dateFormat(new Date())} onChange={(e) => setMovieObj({...movieObj, premiered:e.target.value})}/><br/>
             <br/>
             <input type="submit" className='app-button' value={props.isEdit ? "Update":"Save"} onClick={submitHandler}/>
-            <input type="button" className='app-button' value="Cancel" onClick={()=>navigate("/homepage/movies")}/>
+            <input type="button" className='app-button' value="Cancel" onClick={cancelHandler}/>
            </>}
             
             

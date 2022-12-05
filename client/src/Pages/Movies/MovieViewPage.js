@@ -36,7 +36,8 @@ export const MovieViewPage = () => {
                 //console.log("movie view all page render")
             };
             
-            /* console.log("context:" + menuOption) */
+            //console.log("context:" + menuOption)
+            //printFunc()
             fetchIt()
         },[storeData.moviesFilter])
   return (

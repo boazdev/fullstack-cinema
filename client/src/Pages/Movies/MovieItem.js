@@ -12,7 +12,7 @@ export const MovieItem = (props) => {
     const dispatch= useDispatch()
     const [isDelete,setIsDelete] = useState(false)
     const deleteHandler =  async () =>{
-      console.log(props.data._id)
+      //console.log(props.data._id)
       let resp = await deleteCinemaWS("movies",props.data._id,storeData.token)
       setIsDelete(true)
      
